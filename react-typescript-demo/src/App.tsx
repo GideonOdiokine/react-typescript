@@ -1,36 +1,42 @@
 import "./App.css";
-import Greet from "./components/Greet";
-import { Person } from "./components/Person";
-import { PersonList } from "./components/PersonList";
+import { Counter } from "./components/state/Counter";
+import { User } from "./components/User";
 
 function App() {
-  const personName = {
-    firstName: "Gideon",
-    lastName: "Odiokine",
-  };
-
-  const nameList=[
-    {
-      first:"Gideonick",
-      last:"Odiokine"
-    },
-    {
-      first:"Gidysmart",
-      last:"Odioks"
-    },
-    {
-      first:"Nancy",
-      last:"Odiokine"
-    }
-  ]
-
   return (
     <div className="App">
-      <Greet name="Gideon" messageCount={10} isLoggedIn={false} />
-      <Person name={personName} />
-      <PersonList names={nameList} />
+      <User />
+      <Counter />
     </div>
   );
 }
 
 export default App;
+// {/* <Input value="" handleChange={(e) => console.log(e)} />
+// <Button handleClick={(e, id) => console.log("Clicked", e, id)} /> */}
+// {
+//   /* <Status status="Success" />
+//       <Heading>placeholder text</Heading>
+//       <Oscar>
+//         <Heading>Oscar goes to school !!!</Heading>
+//       </Oscar> */
+// }
+// const personName = {
+//   firstName: "Gideon",
+//   lastName: "Odiokine",
+// };
+
+// const nameList = [
+//   {
+//     first: "Gideonick",
+//     last: "Odiokine",
+//   },
+//   {
+//     first: "Gidysmart",
+//     last: "Odioks",
+//   },
+//   {
+//     first: "Nancy",
+//     last: "Odiokine",
+//   },
+// ];
